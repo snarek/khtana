@@ -1,0 +1,25 @@
+@CHARSET "ISO-8859-1";
+body{
+	-webkit-animation: forbody 5s;
+	animation: forbody 5s;
+}
+@keyframes forbody{
+	from{
+		transform-origin:top center;
+		transform: translateY(-100%) translateX(-100%) rotateX(90deg);
+	}
+	to{
+		transform: translateY(0) rotateX(0deg);
+		background-color: #F2ECEC;
+	}
+}
+@-webkit-keyframes forbody{
+	from{
+		transform-origin:top center;
+		transform: translateY(-100%) translateX(-100%) rotateX(90deg);
+	}
+	to{
+		transform: translateY(0) rotateX(0deg);
+		background-color: #F2ECEC;
+	}
+}

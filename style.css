@@ -1,0 +1,102 @@
+nav li
+{
+	transition:3s;
+	transform: rotate(180deg);
+} 
+body
+{
+	background-repeat: no-repeat;
+	background-color: #F9F6F6;
+}
+header
+{
+	height: 200px;
+	background-image: url('title.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	text-align: center;
+	color: white;
+}
+h2
+{
+	text-align:center;
+}
+
+.imagebox img
+{
+	width:	140px;
+	height: 140px;
+	border: 1px solid black;
+	margin: 3px;
+}
+#myPopup{
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -100%;
+	width: 600px;
+	background: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+	overflow: hidden;
+	border: 3px solid white;
+  	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  	box-sizing: border-box;
+	-webkit-transition: opacity .2s ease-in-out;
+	-moz-transition: opacity .2s ease-in-out;
+	-o-transition: opacity .2s ease-in-out;
+	transition: opacity 2s ease-in-out;
+}
+#myPopup:target{
+  background-size: 100%;
+  background-repeat: no-repeat;
+  opacity: 1;
+  top:10%;
+  heigth: 600px;
+  width:600px;
+  bottom: 10%;
+}
+@-webkit-keyframes myfirst {
+    from {background: red;}
+    to {background: black;}
+}
+@keyframes myfirst {
+    from {background: red;}
+    to {background: black;}
+}
+@keyframes forimage{
+	from{transform: rotate(-30deg);}
+	to{transform: rotate(30deg);}
+}
+li a:hover
+{
+	-webkit-animation: myfirst 5s;
+	animation: myfirst 5s;
+	transform: rotate(180deg);
+}
+.imagebox img:hover
+{
+	animation: forimage 2s;
+	border:		1px solid red;
+}
+svg{
+	float:right;
+}
+svg circle{
+	float:right;
+}
+#feedback *{
+	margin-top: 25px;
+}
+.errorMessage{
+	margin-left: 50px;
+	color:red;
+}
+.successMessage{
+	margin-left: 50px;
+	color:blue;
+}
+input {
+	margin-left: 30px;
+}
+textarea {
+	margin-left: 30px;
+}
