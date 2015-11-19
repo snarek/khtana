@@ -11,15 +11,14 @@
 				<div class="col-sm-6">
 					<h2>Նկարներ</h2>
 					<?php
-
-					/*	for($i=1;$i<=12;$i++)
-						{
-							echo '<a href="#myPopup" class="imagebox">
-									<img src="img\\' . $i .'.jpg" />
-								  </a>';
+						require_once 'connect.php';
+						$query="SELECT * FROM nkarner";
+						$result=$connect->query($query);
+						if ($result){
+							while($row=$result->fetch_assoc()){
+									echo '<a href="#myPopup" class="imagebox"><img src="img\\' . $row['hasce'] .'" /></a>';
+							}
 						}
-						*/
-
 					?>
 					<div id ="myPopup">
 						<a href="#artNkarner">
