@@ -10,13 +10,16 @@
 				<div class="col-sm-3"></div>
 				<div class="col-sm-6">
 					<h2>Նկարներ</h2>
-					<?php 
-						for($i=1;$i<=12;$i++)
+					<?php
+
+					/*	for($i=1;$i<=12;$i++)
 						{
 							echo '<a href="#myPopup" class="imagebox">
 									<img src="img\\' . $i .'.jpg" />
 								  </a>';
-						}						
+						}
+						*/
+
 					?>
 					<div id ="myPopup">
 						<a href="#artNkarner">
@@ -34,10 +37,10 @@
 			$("img").click(function()
 				{
 					var i='url(' + $(this).attr('src') +')';
-					i=i.replace("\\", "/"); 
+					i=i.replace("\\", "/");
 					$('#myPopup').css("background-image", i);
 				});
-		}); 
-		</script> 
+		});
+		</script>
 	</body>
 </html>
