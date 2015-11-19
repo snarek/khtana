@@ -9,7 +9,8 @@
 	</head>
 	<body>
 		<form method="Post" action="uploadPicture.php">
-			<input type="file" name="file">
+			<input type="text" name="anun">
+			<input type="file" name="hasce">
 			<input type="submit">
 		</form>
 	</body>
