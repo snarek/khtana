@@ -18,7 +18,7 @@
 						if ($result){
 							while($row=$result->fetch_assoc()){
 									echo '<div class="imagediv">
-											<img src="img\\' . $row['hasce'] .'" class="imagebox"  onclick="forImage(this)"/>
+											<img src="img\\' . $row['hasce'] .'" class="imagebox"  onclick="forImage(this)" alt="' . $row['anun'] . '"/>
 										  </div>';
 							}
 						}
@@ -27,6 +27,6 @@
 				<div class="col-sm-3"></div>
 			</div>
 		</article>
-		<div id="popup" onclick="forImageHide()"><img id="popupimage" /></div>
+		<div id="popup" onclick="forImageHide()"><h4 id="imageTitle"></h4><img id="popupimage" /></div>
 	</body>
 </html>

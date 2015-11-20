@@ -76,3 +76,9 @@ textarea {
 	display: inline;
 	border-color: black;
 }
+#imageTitle{
+	position:relative;
+	top: 245px;
+	left:45%;
+	color:red;
+}
